@@ -35,13 +35,12 @@ for i in range(len(a)):
         if len(temp)==0:
             print("For instance {0} the hypothesis is g{0}".format(i+1),g)
         else:
-            print("For instance {0} the hypothesis is s{0}".format(i+1),temp)
+            print("For instance {0} the hypothesis is g{0}".format(i+1),temp)
     if a[i][num_att]=='no':
         for j in range(num_att):
             if s[j]!=a[i][j] and s[j]!='?':
                 g[j]=s[j]
                 temp.append(g)
             g=['?']*num_att
-    print("For instance {0} the hypothesis is s{0}".format(i+1),s)
-    print("For instance {0} the hypothesis is g{0}".format(i+1),temp)
-        
+        print("For instance {0} the hypothesis is s{0}".format(i+1),s)
+        print("For instance {0} the hypothesis is g{0}".format(i+1),temp)
